@@ -10,6 +10,7 @@ public class CharacterMove : MonoBehaviour
     private Vector3 _moveDirection;
 
     void Awake() => _characterController = GetComponent<CharacterController>();
+    
     void FixedUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");

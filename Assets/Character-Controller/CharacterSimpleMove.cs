@@ -8,6 +8,7 @@ public class CharacterSimpleMove : MonoBehaviour
     public bool IsGrounded;
 
     void Awake() => _characterController = GetComponent<CharacterController>();
+    
     void FixedUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");
